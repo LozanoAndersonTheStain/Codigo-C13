@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-attachment: fixed;
+}
+
+header{
+    position: relative;
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 10px;
+    background: #000000;
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    flex-flow: row wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+body{
+    background-color: #ffcb05;
+}
+
+.seccion{
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.logo{
+    float: right;
+    padding: 5px 20px 0;
+}
+
+.image{
+    height: 80px;
+}
+
+.image:hover{
+    transform: scale(1.1);
+}
+
+.menu{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    min-height: 90px;
+    z-index: 1000;
+}
+
+.menu ul{
+    list-style: none;
+    padding: 0 10px;
+}
+
+.menu ul li{
+    display: inline-block;
+    position: relative;
+    transition: 0.50s linear;
+    z-index: 1000;
+}
+
+.menu ul li:hover{
+    transform: scale(1.1);
+}
+
+.menu ul li a{
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px 20px;
+    transition: 0.50 linear;
+}
+
+.menu ul li a:hover{
+    color: yellow;
+    transform: scale(1.1);
+}
+
+.menu ul li:hover .items{
+    display: block;
+}
+
+.menu .submenu .items{
+    text-align: center;
+    display: none;
+    background-color: #000000;
+    position: absolute;
+    width: 7.5rem;
+    height: 12.2rem;
+    
+}
+
+.menu .submenu .items li{
+    display: block;
+    overflow: hidden;
+    border-bottom: none;
+}
+
+.menu .submenu .items li a{
+    display: block;
+}
+
+@media (max-width: 1200px){
+    header{
+        margin: 20px;
+    }
+}
+
