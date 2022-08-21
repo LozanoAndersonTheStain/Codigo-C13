@@ -1,16 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&display=swap');
 
 #bienvenida{
+    background: #000000;
+    color: aquamarine;
     text-align: left;
     font-size: 50px;
     font-family: 'DynaPuff', cursive;
     text-align: center;
+    margin: 0.32rem;
 }
+
 
 .imagen1{
     position: relative;
     display: flex;
-    margin: 50px auto;
+    margin: 1rem auto;
     width: 800px;
     height: 600px;
     overflow: hidden;
