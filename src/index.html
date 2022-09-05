@@ -6,32 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Codigo C13</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="Styles/barraNavegacion.css" />
     <i class="fa-solid fa-hexagon-xmark"></i>
     <link rel="stylesheet" href="Styles/noticias.css">
     <link rel="stylesheet" href="Styles/bienvenida.css">
-    <link rel="stylesheet" href="Styles/galeria.css">
+    <link rel="stylesheet" href="Styles/carreras.css">
     <link rel="stylesheet" href="Styles/footer.css">
+    <link rel="stylesheet" href="Styles/login.css" />
+    <link rel="stylesheet" href="Styles/darkMode.css">
   </head>
   <body>
     <header>
-      <a href="" class="logo"
+      <a class="logo"
         ><img
           class="image"
           src="assets/logo/Logoenblanco.png"
           alt="Imagen logo de pagina"
       /></a>
-      
+
         <nav class="menu">
           <ul>
             <li class="submenu">
               <a href="">Nosotros</a>
-              <ul class="items">
-                <li><a href="">Quienes somos</a></li>
-                <li><a href="">De donde venimos</a></li>
-                <li><a href="">Porque estamos aqui</a></li>
-              </ul>
             </li>
   
             <li class="submenu">
@@ -40,119 +38,127 @@
   
             <li class="submenu">
               <a href="#">Carreras</a>
-              <ul class="items">
-                <li><a href="">Frontend</a></li>
-                <li><a href="">Backend</a></li>
-                <li><a href="">FullStar</a></li>
-              </ul>
             </li>
 
            <li><a id="loginin" href="#" rel="noopener noreferrer">Login</a></li>
           </ul>
-        </nav>
-        
 
-        <div class="menu-toggle">
-          <i class="fa fa-bars"></i>
-        </div>
-      
-      
-    </header>
-
-    <main>
-      
-      <div>
-        <h2 id="bienvenida">Bien venidos a Código C13</h2>
-      </div>
-
-      <div class="imagen1">
-        <img src="assets/imagenes/SonBata.jpg" alt="imagen de apertura"> 
-      </div>
-      
-    
-
-
-        <h3 id="tituloNoticias">Noticias</h3>
-
-        <section class="container">
-          <div class="slider-container">
-            <section class="contenido">
-              <div>
-                <a href="#" target="_blank" rel="noopener noreferrer">Titulo de noticia</a>
-  
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ipsa ipsam aliquam natus quidemsed. Quos cupiditate id delectus est.</h3>
-              </div>
-              <img src="./assets/imagenes/Imagen numero 1.jpg" alt="">
-            </section>
-
-            <section class="contenido">
-              <div>
-                <a href="#" target="_blank" rel="noopener noreferrer">Titulo de noticia</a>
-  
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ipsa ipsam aliquam natus quidemsed. Quos cupiditate id delectus est.</h3>
-              </div>
-              <img src="./assets/imagenes/Imagen numero 2.jpg" alt="">
-            </section>
-          
-
-            <section class="contenido">
-              <div>
-                <a href="#" target="_blank" rel="noopener noreferrer">Titulo de noticia</a>
-  
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ipsa ipsam aliquam natus quidemsed. Quos cupiditate id delectus est.</h3>
-              </div>
-              <img src="./assets/imagenes/imagen 3.jpg" alt="">
-            </section>
-          
-        
-            <section class="contenido">
-              <div>
-                <a href="#" target="_blank" rel="noopener noreferrer">Titulo de noticia</a>
-  
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ipsa ipsam aliquam natus quidemsed. Quos cupiditate id delectus est.</h3>
-              </div>
-              <img src="./assets/imagenes/imagen 4.jpg" alt="">
-            </section>
-
-            <section class="contenido">
-              <div>
-                <a href="#" target="_blank" rel="noopener noreferrer">Titulo de noticia</a>
-  
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ipsa ipsam aliquam natus quidemsed. Quos cupiditate id delectus est.</h3>
-              </div>
-              <img src="./assets/imagenes/imagen 5.jpg" alt="">
-            </section>
-
+          <div class="Modo">
+            <label>
+              <input type="checkbox">
+              <span class="check"></span>
+            </label>
           </div>
-        </section>
+        </nav>
+    </header>
+  
+    <main>
+      <section class="bienvenidos">
+        
+        <div>
+          <h2 id="bienvenida">"<span class="edit-b">Bienvenido
+          </span> a la <span class="edit-b">escuela de</span>  
+          programcaión <span class="edit-b">Código C13</span>"</h2>
+        </div>
+      </div>
+  
+      <div>
+        <img class="imagen1" src="assets/imagenes/SonBata.jpg" alt="">
+      </div>
 
+      </section>
+      <div class="inicio">
+
+        <!-- <h3 id="tituloNoticias">Noticias</h3> -->
+        <section class="fondo-noticias">
+
+          <section class="container">
+            <div class="slider-container">
+              <section class="contenido">
+                <div>
+                  <a href="#" target="_blank" rel="noopener noreferrer">Titulo de noticia</a>
+    
+                  <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ipsa ipsam aliquam natus quidemsed. Quos cupiditate id delectus est.</h3>
+                </div>
+                <img src="./assets/imagenes/Imagen numero 1.jpg" alt="">
+              </section>
+  
+              <section class="contenido">
+                <div>
+                  <a href="#" target="_blank" rel="noopener noreferrer">Titulo de noticia</a>
+    
+                  <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ipsa ipsam aliquam natus quidemsed. Quos cupiditate id delectus est.</h3>
+                </div>
+                <img src="./assets/imagenes/Imagen numero 2.jpg" alt="">
+              </section>
+            
+  
+              <section class="contenido">
+                <div>
+                  <a href="#" target="_blank" rel="noopener noreferrer">Titulo de noticia</a>
+    
+                  <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ipsa ipsam aliquam natus quidemsed. Quos cupiditate id delectus est.</h3>
+                </div>
+                <img src="./assets/imagenes/imagen 3.jpg" alt="">
+              </section>
+            
+          
+              <section class="contenido">
+                <div>
+                  <a href="#" target="_blank" rel="noopener noreferrer">Titulo de noticia</a>
+    
+                  <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ipsa ipsam aliquam natus quidemsed. Quos cupiditate id delectus est.</h3>
+                </div>
+                <img src="./assets/imagenes/imagen 4.jpg" alt="">
+              </section>
+  
+              <section class="contenido">
+                <div>
+                  <a href="#" target="_blank" rel="noopener noreferrer">Titulo de noticia</a>
+    
+                  <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ipsa ipsam aliquam natus quidemsed. Quos cupiditate id delectus est.</h3>
+                </div>
+                <img src="./assets/imagenes/imagen 5.jpg" alt="">
+              </section>
+  
+            </div>
+          </section>
+
+        </section>
+        
       <h3 id="carreras">Carreras</h3>
      
-      <section class="contasinerTarjet">
+      <section class="fondo-carreras">
 
-        <div class="tarjet" style="--i:url(../assets/imagenes/Frontend.jpg)">
-          <div class="container2">
-              <h2>Frontend</h2>
-              <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. </a>
-          </div>
-      </div>
-      
-      <div class="tarjet" style="--i:url(../assets/imagenes/Backend.jpg)">
-          <div class="container2">
-              <h2>Backend</h2>
-              <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
-          </div>
-      </div>
+        <section class="contasinerTarjet">
   
-      <div class="tarjet" style="--i:url(../assets/imagenes/Fullstack.png)">
-          <div class="container2">
-              <h2>Fullstack</h2>
-              <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
-          </div>
-      </div>
+          <div class="tarjet" style="--i:url(../assets/imagenes/Frontend.jpg)">
+            <div class="container2">
+                <h2>Frontend</h2>
+                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. </a>
+            </div>
+        </div>
+        
+        <div class="tarjet" style="--i:url(../assets/imagenes/Backend.jpg)">
+            <div class="container2">
+                <h2>Backend</h2>
+                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+            </div>
+        </div>
+    
+        <div class="tarjet" style="--i:url(../assets/imagenes/Fullstack.png)">
+            <div class="container2">
+                <h2>Fullstack</h2>
+                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+            </div>
+        </div>
+        </section>
+
       </section>
+
       
     </main>
+
 
     <footer class="footer">
 
@@ -188,10 +194,12 @@
             </li>                    
         </ul>
       </section>
-
     </footer>
 
     <script src="JavaScript/cuerpodenoticias.js"></script>
+    <script src="JavaScript/darkMode.js"></script>
     <script src="JavaScript/login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.26/dist/sweetalert2.all.min.js"></script>
+    <script src="JavaScript/barraNavegacion.js"></script>
   </body>
 </html>

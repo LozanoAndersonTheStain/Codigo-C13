@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&display=swap');
 
+.fondo-noticias{
+  background: #5c5c5c;
+  margin: 50px 0 0;
+  padding: 45px;
+  justify-content: center;
+  display: flex;
+}
 
 #tituloNoticias{
-  background: #000000;
-  color: aquamarine;
+  color: rgb(20, 171, 121);
   font-family: 'DynaPuff', cursive;
   font-size: 3rem;
   text-align: center;
@@ -11,8 +17,10 @@
 }
 
 .container {
-  width: 100%;
+  width: 400px;
+  height: 200px;
   overflow: hidden;
+
 }
 
 .slider-container {
@@ -24,6 +32,7 @@
   width: 100%;
   height: 600px;
   display: flex;
+  justify-content: center;
   justify-content: space-around;
   align-items: center;
   flex-shrink: 0;
@@ -35,7 +44,7 @@
 }
 
 .contenido:nth-child(2) {
-  background: #575757;
+  background: #828282;
 }
 
 .contenido > img {

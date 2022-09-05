@@ -1,11 +1,20 @@
+
 #carreras{
-    background: #000000;
     font-family: 'DynaPuff', cursive;
     text-align: center;
     font-size: 3rem;
     margin: 0.45rem auto;
     color: aquamarine;
 }
+
+.fondo-carreras{
+    background: #a5a5a5;
+    margin: 30px 0 0;
+    padding: 25px;
+    display: flex;
+    justify-content: space-around;
+}
+
 
 .contasinerTarjet{
     margin: 0.25rem;
@@ -17,12 +26,13 @@
 
 .tarjet{
     margin: 0.25rem auto;
-    width: 20rem;
-    height: 12rem;
+    width: 22rem;
+    height: 13rem;
     border-radius: 15px;
     background: var(--i);
     background-size: cover;
     box-shadow: 5px 10px 10px rgba(3, 32, 51, .8);
+    overflow: hidden;
 }
 
 .container2{
@@ -46,4 +56,8 @@
 
 .tarjet:hover .container2{
     opacity: 1;
+}
+
+.imagen{
+    overflow: hidden;
 }

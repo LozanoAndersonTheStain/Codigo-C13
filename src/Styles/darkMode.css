@@ -1,0 +1,11 @@
+.Modo header{
+    background: #000000;
+}
+
+.Modo body{
+    background-color: #ffcc00;
+}
+
+.Modo .menu-toggle{
+    color: #ffdb4a;
+}

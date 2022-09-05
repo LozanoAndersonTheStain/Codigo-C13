@@ -1,15 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Rubik+Iso&display=swap');@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Rubik+Iso&display=swap');
+
+.bienvenidos{
+    margin: 40px 0 0;
+    padding: 20px 0;
+    background: #b9b6b6;
+}
+
+
 
 #bienvenida{
-    background: #000000;
-    color: aquamarine;
+    color: #14aa9b;
     text-align: left;
-    font-size: 50px;
-    font-family: 'DynaPuff', cursive;
+    font-size: 80px;
+    font-family: 'Rubik Iso', cursive;
     text-align: center;
     margin: 0.32rem;
 }
 
+.inicio{
+    width: 100%;
+    position: relative;
+}
+
+.edit-b{
+    color: gold;
+}
+
+.imagenBienvenida1{
+    width: 100px;
+    height: 100px;
+}
 
 .imagen1{
     position: relative;
@@ -18,7 +39,6 @@
     width: 800px;
     height: 600px;
     overflow: hidden;
-
 }
 
 .imagen1 img{

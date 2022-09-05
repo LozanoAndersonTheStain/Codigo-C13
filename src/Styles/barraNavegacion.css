@@ -6,10 +6,8 @@
 
 header{
     position: relative;
-    max-width: 1200px;
-    margin: 10px auto;
-    padding: 10px;
-    background: #000000;
+    /* margin: 10px auto; */
+    background: #0dccac;
     box-sizing: border-box;
     border-radius: 4px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -19,23 +17,11 @@ header{
 }
 
 body{
-    background-color: #ffcb05;
-}
-
-.menu-toggle{
-    display: none;
-    margin-left: auto;
-    color: #fff;
-    font-size: 2.5rem;
-    cursor: pointer;
+    background-color: #ffffff;
 }
 
 .image{
     height: 80px;
-}
-
-.image:hover{
-    transform: scale(1.1);
 }
 
 .menu{
@@ -81,44 +67,64 @@ body{
     transform: scale(1.1);
 }
 
-.show{
-    height: 305px !important;
-}
-
-.menu ul li:hover .items{
-    display: block;
-}
-
-.menu .submenu .items{
-    text-align: center;
+input [type="checkbox"]{
+    appearance: none;
+    visibility: hidden;
     display: none;
-    background-color: #000000;
-    position: absolute;
-    width: 7.5rem;
-    height: 14.25rem;
 }
 
-.menu .submenu .items li{
-    display: block;
+.check{
+    position: relative;
+    display: flex;
+    width: 40px;
+    height: 20px;
+    background-color: black;
+    cursor: pointer;
+    border-radius: 20px;
     overflow: hidden;
-    border-bottom: none;
+    transition: ease-in 0.5s;
 }
 
-.menu .submenu .items li a{
-    display: block;
+input [type="checkbox"]:checked ~ .check{
+    background: #fff;
+    box-shadow: 0 0 0 1200px #000000;
 }
 
-@media (max-width: 1200px){
+.check:after{
+    content: '';
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background: #0a5a82;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    transition: 0.5s;
+    transform: translate(50px);
+}
+
+input [type="checkbox"]:checked ~ .check:after{
+    transform: translate(0);
+}
+
+
+
+
+
+
+
+
+
+/* @media (max-width: 1200px){
     header{
         margin: 20px;
     }
-}
+} */
 
  /* @media  (max-width: 700px){
     .menu-toggle{
         display: block;
     } 
-
     .menu {
         background-color: #000000;
         position: absolute;
@@ -129,20 +135,15 @@ body{
         overflow: hidden;
         transition: 1.3s ease-out;
     }
-
     .menu ul li {
         display: block;
         text-align: center;
     }
-
     .menu ul li a {
         color: aqua;
         font-size: 20px;
         border-bottom:solid #eee;
         width: 100%;
     }
-
 }  */
-
-
 
