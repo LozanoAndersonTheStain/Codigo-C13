@@ -29,7 +29,7 @@ html{
 }
 
 .container-header header{
-    max-width:  1200px;
+    max-width: 1200px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -295,11 +295,22 @@ html{
     object-fit: cover;
   }
 
+  /* Quienes somos */
+
+.ultima-fase{
+    background: rgb(88, 84, 84);
+}
+
+.quienes-somos{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
   /* Noticias */
 
   .fondo-noticias{
     background: #5c5c5c;
-    margin: -70px 0;
+    margin: 0px 0;
     padding: 130px 0;
     justify-content: center;
     display: flex;
@@ -458,6 +469,8 @@ html{
 .imagen{
     overflow: hidden;
 }
+
+
 
 /* Footer */
 

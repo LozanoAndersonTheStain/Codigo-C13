@@ -25,31 +25,6 @@ enlace.addEventListener('click', () => {
               </form>
             </div>
           </div>
-  
-          <div class="user signupBx">
-            <div class="formBx">
-              <form>
-                <h2 class="title">Create an account</h2>
-                <input type="text" placeholder="Username" />
-                <input type="text" placeholder="Email address" />
-                <input type="text" placeholder="Create Password" />
-                <input type="password" placeholder="Confirm Password" />
-                <input type="submit" value="Sing Up" />
-  
-                <p class="signup">
-                  Olvidaste tu contraseña? <a href="#" onclick="toggleForm();">Sing in.</a>
-                </p>
-              </form>
-            </div>
-            <div class="imgBx">
-              <img
-                class="imagenLogin"
-                src="assets/imagenes/Imagen 2.jpg"
-                alt="imagen de crear cuenta"
-              />
-            </div>
-          </div>
-        </div>
       </section>`,
         confirmButtonText: 'Login',
         focusConfirm: false,
