@@ -8,19 +8,11 @@
   display: flex;
 }
 
-#tituloNoticias{
-  color: rgb(20, 171, 121);
-  font-family: 'DynaPuff', cursive;
-  font-size: 3rem;
-  text-align: center;
-  margin: 0.50rem auto;
-}
 
 .container {
   width: 400px;
   height: 200px;
   overflow: hidden;
-
 }
 
 .slider-container {

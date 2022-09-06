@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lobster&family=Rubik+Iso&family=Russo+One&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Lobster', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    /* Permite desplazarse cuando se hace click en los links del menu */
+    scroll-behavior: smooth;
+}
+
+.container-header{
+    background: #0dccac;
+    position: fixed;
+    width: 100%;
+    height: 15%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.container-header header{
+    max-width:  1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.container-header header .logo .image{
+    height: 80px;
+    display: flex;
+}
+
+.container-header header ul{
+    display: flex;
+    list-style: none;
+}
+
+.container-header header nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.container-header header nav ul li a:hover{
+    color: cyan;
+}
+
+.nav-responsive{
+    display: none;
+    background-color: aquamarine;
+    color: aliceblue;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
