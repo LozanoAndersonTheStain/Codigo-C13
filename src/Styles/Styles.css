@@ -271,17 +271,22 @@ html{
     color: gold;
   }
   
+  .container-imagen{
+    display: flex;
+    
+  }
+
   .imagenBienvenida1 {
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: 100%;
   }
   
   .imagen1 {
     position: relative;
-    display: block;
+    display: flex;
     margin: 1rem auto;
-    width: 800px;
-    height: 600px;
+    width: 100%;
+    height: 100%;
   }
   
   .imagen1 img {
@@ -618,5 +623,22 @@ html{
   nav.responsive ul li{
     border-bottom: 1px solid #fff;
     padding: 10px 0;
+  }
+}
+
+@media screen and (max-width: 360px){
+  nav{
+    display: none;
+  }
+  .nav-responsive{
+    display: block;
+  }
+  nav.responsive{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 75px;
+    background-color: #252a2e;
+    width: 100px;
   }
 }
