@@ -28,14 +28,14 @@
 
         <nav id="nav">
           <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#noticias">Noticias</a></li>
-            <li><a href="#carreras">Carreras</a></li>
-            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+            <li><a href="#noticias" onclick="seleccionar()">Noticias</a></li>
+            <li><a href="#carreras" onclick="seleccionar()">Carreras</a></li>
+            <li><a href="#nosotros" onclick="seleccionar()">Nosotros</a></li>
             <li><a id="loginin" href="#" rel="noopener noreferrer">Login</a></li>
           </ul>
         </nav>
-        <div class="nav-responsive">
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()">
           <i class="fa-solid fa-bars"></i>
         </div>
       </header>
@@ -56,16 +56,33 @@
       </div> 
       </section>
 
-      <section id="nosotros" class="ultima-fase">
+      <section id="nosotros" class="presentacion">
         <div class="quienes-somos">
           <h3>Quienes somos</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ipsam nam iure commodi, velit nihil, similique quos maiores dignissimos, at ipsa non! Porro illum quas voluptate, adipisci quasi eligendi consequatur!
-          Dignissimos vero distinctio, quod id cum sapiente consectetur. Mollitia voluptatum cumque unde voluptates non, deserunt quo laboriosam laudantium consectetur ipsum, tempora rem doloremque? Sunt fugiat ipsum quo repellendus, velit recusandae!
-          Inventore sint sapiente earum modi omnis consectetur nam perspiciatis veritatis iure. Ex totam, illo ipsum sed asperiores doloremque praesentium dignissimos, repellat iste, dicta commodi fuga nostrum corrupti placeat ipsa? Cum!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed cumque maxime sint omnis aperiam ab, quis vel pariatur, dolor a quod consectetur perspiciatis inventore incidunt at. Laborum, pariatur. Deserunt, iure!</p>
+        </div>
+        <br>
+        <div class="quienes-somos">
+          <h3>Que queremos lograr</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis vero cum molestiae quasi itaque atque, iste eius voluptates debitis. Earum voluptates laboriosam ullam aut eum nostrum beatae magni sunt ipsum.</p>
+        </div>
+        <br>
+        <div class="quienes-somos">
+          <h3>Por que estamos aqui</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta porro optio suscipit expedita. Corporis consequatur inventore deserunt necessitatibus itaque sequi beatae facilis earum, non natus est laborum praesentium perferendis voluptates.</p>
+        </div>
+        <br>
+        <div class="quienes-somos">
+          <h3>En que nos desempeñamos</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit nostrum dignissimos nisi quasi quos. Accusantium cum amet cupiditate voluptatibus delectus vitae cumque obcaecati nisi voluptate? Officia quam vero excepturi nam.</p>
+        </div>
+        <br>
+        <div class="quienes-somos">
+          <h3>Que queremos para el futuro</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque ex eligendi veritatis vitae unde iusto. Sit est nemo quis quod maiores odit, incidunt distinctio rerum odio earum harum placeat sapiente?</p>
         </div>
       </section>
 
-      <div class="inicio">
         <!-- <h3 id="tituloNoticias">Noticias</h3> -->
         <section id="noticias" class="fondo-noticias">
 
@@ -121,11 +138,10 @@
           </section>
 
         </section>
-        
-      <!-- <h3 class="carreras">Carreras</h3> -->
      
+        <h3 class="carreras">Carreras</h3>
+        
       <section id="carreras" class="fondo-carreras">
-
         <section class="contasinerTarjet">
   
           <div class="tarjet" style="--i:url(../assets/imagenes/Frontend.jpg)">
@@ -155,7 +171,9 @@
 
     <!-- Volver arriba -->
 
-    
+    <div id="button-up">
+      <i class="fa-solid fa-chevron-up"></i>
+    </div>
 
 
     <footer class="footer">
@@ -163,24 +181,24 @@
       <section class="Social">
         <ul class="Media">
             <li data-text="Facebook" data-color="#1877f2">
-             <a href="#" class="facebook">
+             <a href="https://www.facebook.com/sonbatac13/" class="facebook">
                 <i class="fa fa-facebook-official"aria-hidden="true"></i>
              </a>   
             <li>                        
             <li data-text="YouTube" data-color="#ff0000">
-              <a href="#" class="youtube">
+              <a href="https://www.youtube.com/channel/UCmOb_w1fh2sVjDh9bpoCRXA" class="youtube">
                 <i class="fa fa-youtube" aria-hidden="true"></i>
               </a>  
             </li>  
     
             <li data-text="Twitter" data-color="#0099ff">
-              <a href="#" class="twitter">
+              <a href="https://twitter.com/sonbatac13?lang=es" class="twitter">
                 <i class="fa fa-twitter" aria-hidden="true"></i>
               </a>  
             </li>
     
             <li data-text="Instagram" data-color="#ff6600">
-              <a href="#" class="instagram">
+              <a href="https://www.instagram.com/sonbatac13/?hl=es" class="instagram">
                 <i class="fa fa-instagram" aria-hidden="true"></i>
               </a>  
             </li> 
@@ -197,7 +215,9 @@
     <script src="JavaScript/cuerpodenoticias.js"></script>
     <script src="JavaScript/darkMode.js"></script>
     <script src="JavaScript/login.js"></script>
+    <script src="JavaScript/volver-arriba.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.26/dist/sweetalert2.all.min.js"></script>
     <script src="JavaScript/barraNavegacion.js"></script>
+    
   </body>
 </html>

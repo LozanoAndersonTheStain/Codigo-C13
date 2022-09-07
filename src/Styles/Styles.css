@@ -22,7 +22,7 @@ html{
     background: #0dccac;
     position: fixed;
     width: 100%;
-    height: 15%;
+    height: 14%;
     top: 0;
     left: 0;
     z-index: 99;
@@ -30,7 +30,7 @@ html{
 
 .container-header header{
     max-width: 1200px;
-    margin: auto;
+    margin: -20px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -57,7 +57,7 @@ html{
 }
 
 .container-header header nav ul li a:hover{
-    color: cyan;
+    color: rgb(0, 191, 255);
 }
 
 .nav-responsive{
@@ -243,25 +243,20 @@ html{
       }
   }
   
-  @media (max-width: 700px){
-    img{
-      width: 100%;
-      height: 100%;
-    }
-  }
 
 /* Bienvenida */
 
 .bienvenidos {
-    margin: 70px 0;
+    margin: 54px 0px 0px;
     padding: 20px 0;
-    background: #b9b6b6;
+    background: #5b98f5;
   }
   
   #bienvenida {
-    color: #14aa9b;
+    display: block;
+    color: #1655b2;
     text-align: left;
-    font-size: 80px;
+    font-size: 50px;
     font-family: 'Rubik Iso', cursive;
     text-align: center;
     margin: 0.32rem;
@@ -283,7 +278,7 @@ html{
   
   .imagen1 {
     position: relative;
-    display: flex;
+    display: block;
     margin: 1rem auto;
     width: 800px;
     height: 600px;
@@ -297,19 +292,36 @@ html{
 
   /* Quienes somos */
 
-.ultima-fase{
-    background: rgb(88, 84, 84);
+.presentacion{
+    background: #189a84;
+    justify-content: center;
+    display: block;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: space-around;
 }
 
+/* @media screen and (min-width: 340){
+  .presentacion{
+    height: 1570px;
+    display: flex;
+  }
+} */
+
 .quienes-somos{
+  color: #322276;
     text-align: center;
     font-size: 1.5rem;
+}
+
+.presentacion .quienes-somos p{
+  color: #1b3254;
 }
 
   /* Noticias */
 
   .fondo-noticias{
-    background: #5c5c5c;
+    background: #0e9095;
     margin: 0px 0;
     padding: 130px 0;
     justify-content: center;
@@ -408,16 +420,17 @@ html{
   /* Carreras */
 
   .carreras{
+    background: #62409a;
     font-family: 'DynaPuff', cursive;
     text-align: center;
     font-size: 3rem;
-    margin: 0.45rem auto;
+    margin: -0.55rem auto;
     color: aquamarine;
 }
 
 .fondo-carreras{
-    background: #a5a5a5;
-    margin: 30px 0 0;
+    background: #62409a;
+    margin: 0px 0 0;
     padding: 25px;
     display: flex;
     justify-content: space-around;
@@ -471,6 +484,31 @@ html{
 }
 
 
+/* Volver arriba */
+
+#button-up{
+    width: 50px;
+    height: 50px;
+    background-color: #426eff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ff9100;
+    border-radius: 70%;
+    font-size: 25px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;
+    border: 4px solid transparent;
+    transition: all 300ms ease;
+    transform: scale(0);
+}
+
+#button-up:hover{
+  transform: scale(1.1);
+  border: rgba(0, 0, 0, 1);
+}
 
 /* Footer */
 
@@ -478,8 +516,8 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 140vh;
-
+    min-height: 15vh;
+    z-index: -10;
 }
 .Media{
     display: flex;
@@ -508,6 +546,7 @@ html{
     opacity: 0;
 }
 .Media li:hover::before{
+    color: black;
     opacity: 0.1;
     transform: translate(-30%, calc(-30% + 150px));
 }
@@ -519,7 +558,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    color:#333;
+    color:rgb(89, 56, 149);
     border-radius: 100px;
     text-decoration: none;
     margin: 20px;
@@ -556,3 +595,28 @@ html{
     transform: scale(1.80) translateZ(1rem);
 }
 
+/* Nav responsive */
+
+@media screen and (max-width: 980px) {
+  nav{
+    display: none;
+  }
+  .nav-responsive{
+    display: block;
+  }
+  nav.responsive{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 75px;
+    background-color: #252a2e;
+    width: 100px;
+  }
+  nav.responsive ul{
+    display: block !important;
+  }
+  nav.responsive ul li{
+    border-bottom: 1px solid #fff;
+    padding: 10px 0;
+  }
+}
