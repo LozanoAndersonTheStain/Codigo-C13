@@ -276,12 +276,12 @@ html{
     height: 100px;
   }
   
-  .imagen1 {
+ .imagen1 {
     position: relative;
-    display: block;
+    display: flex;
     margin: 1rem auto;
-    width: 800px;
-    height: 600px;
+    width: 100%;
+    height: 100%;
   }
   
   .imagen1 img {
