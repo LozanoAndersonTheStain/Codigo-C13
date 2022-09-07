@@ -281,7 +281,7 @@ html{
     height: 100%;
   }
   
-  .imagen1 {
+ .imagen1 {
     position: relative;
     display: flex;
     margin: 1rem auto;
@@ -623,22 +623,5 @@ html{
   nav.responsive ul li{
     border-bottom: 1px solid #fff;
     padding: 10px 0;
-  }
-}
-
-@media screen and (max-width: 360px){
-  nav{
-    display: none;
-  }
-  .nav-responsive{
-    display: block;
-  }
-  nav.responsive{
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 75px;
-    background-color: #252a2e;
-    width: 100px;
   }
 }
