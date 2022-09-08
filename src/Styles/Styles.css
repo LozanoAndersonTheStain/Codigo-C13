@@ -247,7 +247,7 @@ html{
 /* Bienvenida */
 
 .bienvenidos {
-    margin: 80px 0px 0px;
+    margin: 78px 0px 0px;
     padding: 20px 0;
     background: #5b98f5;
   }
@@ -615,7 +615,7 @@ html{
     right: 0;
     top: 75px;
     background-color: #252a2e;
-    width: 100px;
+    width: 100%;
   }
   nav.responsive ul{
     display: block !important;
